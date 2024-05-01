@@ -1,0 +1,37 @@
+{
+  "short_name": "Foody",
+  "name": "Foody blog",
+  "description": "A recipe blog for food lovers",
+  "icons": [
+    {
+      "src": "logo.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo.webp",
+      "type": "image/webp",
+      "sizes": "160x160"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-localhost.png",
+      "sizes": "1366x641",
+      "type": "image/png",
+      "purpose": "any",
+      "form_factor": "wide"
+    },
+    {
+      "src": "mobile-screenshot.png",
+      "sizes": "500x632",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

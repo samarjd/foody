@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Foody Blog</title>
+  <style>
+    /* Add CSS styles for better formatting */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgb(175, 175, 175);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .welcome-message {
+      margin-bottom: 20px;
+    }
+    .footer-details {
+      margin-top: 30px;
+      color: #777;
+      font-size: 14px;
+      text-align: center;
+    }
+    .token {
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://i.ibb.co/rHHwxsq/logo1.webp" alt="Foody blog Logo" width="150">
+    </div>
+    <h1>Welcome to Foody Blog!</h1>
+    <div class="welcome-message">
+      <p>Hello <%= firstname %> <%= lastname %>,</p>
+      <p>We're thrilled to have you as a member of Foody Blog. Your account has been successfully registered.</p>
+      <p>Feel free to explore our blog, connect with other food enthusiasts, and share your culinary adventures.</p>
+      <p>Here's your verification token:</p>
+      <a class="token" href="<%= verificationLink %>" target="_blank"><%= token %></a>
+      <p>Please click on the token to verify your account.</p>
+    </div>
+    <p class="footer-details">&copy; <%= new Date().getFullYear() %> all rights reserved by <strong>Foody</strong></p>
+  </div>
+</body>
+</html>
